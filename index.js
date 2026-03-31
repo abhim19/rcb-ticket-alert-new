@@ -39,10 +39,7 @@ async function checkChanges() {
       await client.messages.create({
         from: process.env.TWILIO_WHATSAPP_NUMBER,
         to: process.env.YOUR_WHATSAPP_NUMBER,
-        body: `🚨 RCB Ticket Update!
-
-Tickets page has changed!
-Check now: ${URL}`,
+        body: "Test alert 🚀 RCB monitoring working!",
       });
     }
 
@@ -56,4 +53,3 @@ Check now: ${URL}`,
 cron.schedule("*/2 * * * *", checkChanges);
 
 console.log("🚀 Monitoring started...");
-body: "Test alert 🚀 RCB monitoring working!"

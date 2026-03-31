@@ -50,7 +50,7 @@ async function checkChanges() {
       oldContent = fs.readFileSync(FILE, "utf-8");
     }
 
-    if (oldContent && oldContent !== newContent) {
+    if (true) {
       console.log("🚨 Change detected!");
 
       await sendTelegramMessage(

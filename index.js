@@ -56,3 +56,4 @@ Check now: ${URL}`,
 cron.schedule("*/2 * * * *", checkChanges);
 
 console.log("🚀 Monitoring started...");
+body: "Test alert 🚀 RCB monitoring working!"

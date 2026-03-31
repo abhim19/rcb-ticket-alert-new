@@ -67,7 +67,7 @@ Check now: ${URL}`
   }
 }
 
-// ⏱ Run every 2 minutes
-cron.schedule("*/2 * * * *", checkChanges);
+// ⏱ Run every 30 seconds
+cron.schedule("*/30 * * * * *", checkChanges);
 
 console.log("🚀 RCB Ticket Monitor Started...");
